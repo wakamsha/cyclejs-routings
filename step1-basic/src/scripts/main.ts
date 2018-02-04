@@ -79,7 +79,7 @@ function main(sources: SoAll): SiAll {
 
     return {
         DOM: page$.map((sinks: SiAll) => sinks.DOM).switch(),
-        router: page$.map((sinks: SiAll) => sinks.router).switch().startWith('/')
+        router: page$.map((sinks: SiAll) => sinks.router).switch()
     };
 }
 
